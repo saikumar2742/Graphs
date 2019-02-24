@@ -12,3 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.custom-dropzone {
+  border-style: dashed;
+}
+
+.dropzone--isActive{
+  pointer-events: none;
+}
+
+.table-graph>div{
+  width: 50%;
+  float: left;
+}
