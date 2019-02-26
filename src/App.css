@@ -1,5 +1,70 @@
 .App {
   text-align: center;
+  height: 90vh;
+  border: 1px solid #a8b3bd;
+  margin: 49px;
+  padding: 26px;
+}
+
+.upload-page {
+  width: 50%;
+  margin: auto;
+}
+
+.custom-dropzone {
+  margin-top: 50px;
+  min-height: 50vh;
+  color: #7c8084;
+  border: 2px dashed #91989e;
+  border-radius: 14px;
+}
+
+.dropzone-message {
+  margin-top: 17vh;
+}
+
+.dropzone--isActive {
+  pointer-events: none;
+}
+
+.table-graph > div {
+  width: 50%;
+  float: left;
+}
+
+.button-div {
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.button-div > b {
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.selection-container {
+  width: 50%;
+  margin: auto;
+}
+
+.selection-container > select {
+  margin: 10px;
+}
+
+.close-button {
+  border: 1px solid #a8b3bd;
+  border-radius: 16px;
+  font-size: 22px;
+  padding: 3px;
+  color: #495057;
+  cursor: pointer;
+}
+
+td,
+th {
+  overflow-wrap: break-word;
 }
 
 .App-logo {
