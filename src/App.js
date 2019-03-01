@@ -22,6 +22,11 @@ class App extends Component {
   onDrop = files => {
     files.forEach(file => {
       const reader = new FileReader();
+      if(file.type !== "application/vnd.ms-excel"){
+        alert("Add only .csv files");
+        window.location.reload();
+        return
+      }
       let fileName = file.name;
       reader.onload = () => {
         var jsonArray = csvjson.toObject(reader.result, {});
@@ -130,7 +135,7 @@ class App extends Component {
                       <i className="fa fa-hand-o-up" />
                       <p>Drap & Drop</p>
                       <p> or </p>
-                      <p>Browse Files Here</p>
+                      <p>Browse CSV File Here</p>
                     </div>
                   </div>
                 );
