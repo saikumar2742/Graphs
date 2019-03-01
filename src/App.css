@@ -27,11 +27,6 @@
   pointer-events: none;
 }
 
-.table-graph > div {
-  width: 50%;
-  float: left;
-}
-
 .button-div {
   text-align: right;
   margin-bottom: 25px;

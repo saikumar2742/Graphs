@@ -22,7 +22,6 @@ class App extends Component {
   onDrop = files => {
     files.forEach(file => {
       const reader = new FileReader();
-      debugger;
       if (
         ![
           'application/vnd.ms-excel',
