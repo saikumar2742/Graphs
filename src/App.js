@@ -22,10 +22,18 @@ class App extends Component {
   onDrop = files => {
     files.forEach(file => {
       const reader = new FileReader();
-      if(file.type !== "application/vnd.ms-excel"){
-        alert("Add only .csv files");
+      debugger;
+      if (
+        ![
+          'application/vnd.ms-excel',
+          'text/plain',
+          'text/csv',
+          'text/tsv',
+        ].includes(file.type)
+      ) {
+        alert('Add only .csv files');
         window.location.reload();
-        return
+        return;
       }
       let fileName = file.name;
       reader.onload = () => {
